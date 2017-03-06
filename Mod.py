@@ -1,5 +1,5 @@
 #Module functions for other programs 
-
+import random
 #get int input from user
 
 def IntInput(s):
@@ -13,7 +13,12 @@ def StringInput(i):
     print i,
     inpt = raw_input()
     return inpt
-    
+
+
+def randomincreasing(n,x,y):
+    n = n + random.randrange(x, y)
+    return n
+
 #string to list
 
 def strtolist(t):
